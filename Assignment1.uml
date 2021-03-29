@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.Assignment1</OriginalElement>
+  <nodes>
+    <node x="293.0" y="0.0">com.Assignment1.Monomial</node>
+    <node x="223.0" y="346.0">com.Assignment1.DivisionResult</node>
+    <node x="0.0" y="346.0">com.Assignment1.App</node>
+    <node x="315.0" y="538.0">com.Assignment1.InvalidPolynomialException</node>
+    <node x="0.0" y="0.0">com.Assignment1.CalculatorController</node>
+    <node x="0.0" y="686.0">com.Assignment1.Models</node>
+    <node x="0.0" y="538.0">com.Assignment1.Polynomial</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="182.5" y="407.0" />
+  <SelectedNodes>
+    <node>com.Assignment1.Monomial</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

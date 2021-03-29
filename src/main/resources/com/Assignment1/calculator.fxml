@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.shape.Line?>
+<VBox fx:id="vbox" spacing="10" alignment="CENTER" prefWidth="700" prefHeight="600" fx:controller="com.Assignment1.CalculatorController" xmlns:fx="http://javafx.com/fxml">
+   <fx:define>
+      <Font fx:id="FONT" size="18" />
+   </fx:define>
+   <fx:define>
+      <Font fx:id="OPERATORFONT" name="Arial Black" size="30" />
+   </fx:define>
+   <padding>
+      <Insets left="10" right="10" />
+   </padding>
+
+   <Label text="Polynomial 1:" prefWidth="${vbox.prefWidth}" font="$FONT" />
+
+   <HBox spacing="10" alignment="CENTER">
+      <StackPane alignment="CENTER">
+         <Rectangle fill="WHITE" stroke="GRAY" width="590" height="40" />
+         <Text fx:id="polynomial1Text" font="$FONT" />
+      </StackPane>
+      <Button text="Reset" minWidth="100" font="$FONT" onAction="#resetPolynomial1" />
+   </HBox>
+
+   <Label text="Polynomial 2:" prefWidth="${vbox.prefWidth}" font="$FONT" />
+
+   <HBox spacing="10" alignment="CENTER">
+      <StackPane alignment="CENTER">
+         <Rectangle fill="WHITE" stroke="GRAY" width="590" height="40" />
+         <Text fx:id="polynomial2Text" font="$FONT" />
+      </StackPane>
+      <Button text="Reset" minWidth="100" font="$FONT" onAction="#resetPolynomial2" />
+   </HBox>
+
+   <Label text="Result:" prefWidth="${vbox.prefWidth}" font="$FONT" />
+
+   <StackPane alignment="CENTER" maxWidth="${vbox.prefWidth}">
+      <Rectangle fill="WHITE" stroke="GRAY" width="${vbox.prefWidth}" height="40" />
+      <Text fx:id="resultText" font="$FONT" />
+   </StackPane>
+
+   <Label text="Polynomial Operation:" prefWidth="${vbox.prefWidth}" font="$FONT" />
+
+   <HBox spacing="10" alignment="CENTER" maxWidth="${vbox.prefWidth}">
+      <Button text="+" prefWidth="200" font="$OPERATORFONT" onAction="#processOperator" />
+      <Button text="-" prefWidth="200" font="$OPERATORFONT" onAction="#processOperator" />
+      <Button text="*" prefWidth="200" font="$OPERATORFONT" onAction="#processOperator" />
+      <Button text="/" prefWidth="200" font="$OPERATORFONT" onAction="#processOperator" />
+      <Button text="'" prefWidth="200" font="$OPERATORFONT" onAction="#processOperator" />
+      <Button text="∫" prefWidth="200" font="$OPERATORFONT" onAction="#processOperator" />
+   </HBox>
+
+   <Rectangle width="${vbox.prefWidth}" height="5" />
+
+   <HBox spacing="10" alignment="CENTER" maxWidth="${vbox.prefWidth}">
+      <VBox alignment="CENTER">
+         <Button text="Polynomial 1" prefWidth="150" prefHeight="50" font="$FONT" onAction="#editPolynomial1" />
+         <Button text="Polynomial 2" prefWidth="150" prefHeight="50" font="$FONT" onAction="#editPolynomial2" />
+         <Button text="RESET" prefWidth="150" prefHeight="50" font="$FONT" onAction="#resetAll" />
+         <Button text="EXIT" prefWidth="150" prefHeight="50" font="$FONT" onAction="#exit" />
+      </VBox>
+      <VBox alignment="CENTER">
+         <HBox alignment="CENTER">
+            <Button text="7" prefWidth="50" prefHeight="50" font="$FONT" onAction="#processKeyboard" />
+            <Button text="8" prefWidth="50" prefHeight="50" font="$FONT" onAction="#processKeyboard" />
+            <Button text="9" prefWidth="50" prefHeight="50" font="$FONT" onAction="#processKeyboard" />
+         </HBox>
+         <HBox alignment="CENTER">
+            <Button text="4" prefWidth="50" prefHeight="50" font="$FONT" onAction="#processKeyboard" />
+            <Button text="5" prefWidth="50" prefHeight="50" font="$FONT" onAction="#processKeyboard" />
+            <Button text="6" prefWidth="50" prefHeight="50" font="$FONT" onAction="#processKeyboard" />
+         </HBox>
+         <HBox alignment="CENTER">
+            <Button text="1" prefWidth="50" prefHeight="50" font="$FONT" onAction="#processKeyboard" />
+            <Button text="2" prefWidth="50" prefHeight="50" font="$FONT" onAction="#processKeyboard" />
+            <Button text="3" prefWidth="50" prefHeight="50" font="$FONT" onAction="#processKeyboard" />
+         </HBox>
+         <HBox alignment="CENTER">
+            <Button text="0" prefWidth="150" prefHeight="50" font="$FONT" onAction="#processKeyboard" />
+         </HBox>
+      </VBox>
+      <VBox alignment="CENTER">
+         <HBox alignment="CENTER" maxWidth="${vbox.prefWidth}">
+            <Button text="←" prefWidth="132" prefHeight="66" font="$FONT" onAction="#processKeyboard" />
+         </HBox>
+         <HBox alignment="CENTER" maxWidth="${vbox.prefWidth}">
+            <Button text="+" prefWidth="66" prefHeight="66" font="$FONT" onAction="#processKeyboard" />
+            <Button text="-" prefWidth="66" prefHeight="66" font="$FONT" onAction="#processKeyboard" />
+         </HBox>
+         <HBox alignment="CENTER" maxWidth="${vbox.prefWidth}">
+            <Button text="X" prefWidth="66" prefHeight="66" font="$FONT" onAction="#processKeyboard" />
+            <Button text="^" prefWidth="66" prefHeight="66" font="$FONT" onAction="#processKeyboard" />
+         </HBox>
+      </VBox>
+   </HBox>
+
+</VBox>
