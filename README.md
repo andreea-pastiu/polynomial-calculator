@@ -1,1 +1,3 @@
 # polynomial-calculator
+
+The main objective of the project is the implementation of a Polynomial calculator with a dedicated graphical interface through which the user can insert polynomials, select the mathematical operation to be performed and view the result. The application is done in Java, using JavaFX for the UI, Maven for dependencies and Junit for unit testing. The calculator allows the user to enter 1 or 2 polynomials and computes one of the following operations: addition, subtraction, multiplication, division, derivative, and integration. Each of those operations will be described in the second chapter of the documentation.
